@@ -320,18 +320,18 @@ window.addEventListener('DOMContentLoaded', function() {
             current.textContent = `0${sliderIndex}`;
         } else {
             current.textContent = sliderIndex;
-        }
-
-        function plusSlides(n) {
-            showSlides(sliderIndex += n);
-        }
-
-        prev.addEventListener('click', () => {
-            plusSlides(-1);
-        });
-
-        next.addEventListener('click', () => {
-            plusSlides(1);
-        });
+        }        
     }
+
+    function plusSlides(n) {
+        showSlides(sliderIndex += n);
+    }
+
+    prev.addEventListener('click', () => {
+        plusSlides(-1);
+    });
+
+    next.addEventListener('click', () => {
+        plusSlides(1);
+    });
 });
